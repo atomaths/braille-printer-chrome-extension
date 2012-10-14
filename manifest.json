@@ -1,0 +1,24 @@
+{
+  "name": "Braille Printer",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Braille Printer",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content_script.js"]
+//    "run_at": "document_end",
+//    "all_frames": true
+   }],
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "tts", "ttsEngine"
+//    "contextMenus",
+//    "background",
+  ]
+}

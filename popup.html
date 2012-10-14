@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Braille Printer</title>
+<style>
+    body { min-width: 800px; overflow-x: hidden; overflow-y: hidden; }
+    button { height: 26px; font-weight: bold; }
+</style>
+
+<!-- JavaScript and HTML must be in separate files for security. -->
+<script src="popup.js"></script>
+<script src="jquery.min.js"></script>
+<script src="jquery.printpage.js"></script>
+</head>
+<body style="padding: 0; margin: 0;">
+
+<div id="toast" style="position: absolute; top: 0; left: 160px; width: 500px; height: 26px; background-color: yellow; display: none; text-align: center; line-height: 26px;"></div>
+
+<div style="width: 800px; overflow-x: hidden; overflow-y: auto;"> 
+    <div id="result" style="text-align: center; padding: 7px; overflow-x: hidden; overflow-y: auto;"></div>
+    <div style="padding: 10px; text-align: center; background-color: whiteSmoke;">
+        <button id="btn-speak" disabled="disabled">Speak it</button>
+        <button id="btn-print" disabled="disabled">Print</button>
+        <button id="btn-cloud-print" disabled="disabled">Cloud Print</button>
+    </div>
+</div>
+
+</body>
+</html>
